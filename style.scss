@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+
+  background-color:rgb(247, 245, 245);
+
+}
+.card {
+  width: 200px;
+  height: 250px;
+  -webkit-box-shadow: 3px 3px 5px 3px rgba(128, 21, 87, 0.3);
+  // -moz-box-shadow: 13px 9px 15px -13px rgba(0, 0, 0, 1);
+  // box-shadow: 10px 9px 15px -13px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-weight: 700;
+  opacity: .5;
+  transform: scale(.8);
+  // transition: all ease .3s;
+cursor: pointer;
+color: #44281d;
+background-color: #f0e14a	;
+
+}
+
+.active{
+    opacity: 1;
+      transform: scale(1);
+      transition: all .3s ease-in-out;
+    }
+
+#review-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+//   align-items: center;
+  width: 900px;
+  margin: 100px auto;
+  height: 100vh;
+
+
+}
+
+.card .image-container {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+
+
+}
+
+.card .image-container img {
+  width: 100%;
+
+}
+
+.card .name-container {
+  position: absolute;
+  bottom: 0;
+  background-color: #e89ac7;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.logo img{
+  width: 850px;
+
+}
+
+@media (max-width: 568px) {
+  #review-container {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap:nowrap;
+  //   align-items: center;
+    // width: 400px;
+    margin: 0 ;
+    height: 100vh;
+  padding: 0;
+  
+  
+  }
+  .card {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-weight: 700;
+    opacity: .8;
+    transform: scale(.8);
+  //   transition: all ease .3s;
+  cursor: pointer;
+  color: #44281d;
+  
+  }
+
+  .active{
+    opacity: 1;
+      transform: scale(1);
+      transition: all .3s ease-in-out;
+    }
+
+    .logo img{
+      width: 400px;
+    
+    }
+}
