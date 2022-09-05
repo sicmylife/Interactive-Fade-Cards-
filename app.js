@@ -1,4 +1,4 @@
-const reviewContainer = document.getElementById("review-container");
+const container = document.querySelector(".container");
 
 // const reviews = [
 //   {
@@ -120,7 +120,7 @@ data.results.forEach((character) => {
   cardElement.append(imageContainer,paragraphElement,nameContainer);
 
 
-  reviewContainer.append(cardElement);
+  container.append(cardElement);
 });
 })
   
